@@ -1,3 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Work Sans", sans-serif;
+  /* transition:all 2s ease-in-out; */
+}
+
+.head-font {
+  font-family: "Rubik Wet Paint", cursive;
+}
+
+.btn,
+.btn-mywork {
+  background-color: #fff;
+  margin-right: 24px;
+  padding: 6px 12px;
+  border-radius: 0.2rem;
+  font-family: "Rubik Wet Paint", cursive;
+  cursor: pointer;
+}
+
+.btn-mywork {
+  background-color: aqua;
+}
+
+.shadow {
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.32);
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.32);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.32);
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome and Safari */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide scrollbar thumb in Chrome and Safari */
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide scrollbar track in Chrome and Safari */
+}
+
+/* Hide scrollbar in Firefox */
+.scroll.dark {
+  scrollbar-color: transparent transparent; /* Thumb color and track color (in this case, both transparent) */
+}
