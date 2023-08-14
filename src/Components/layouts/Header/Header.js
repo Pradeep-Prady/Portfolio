@@ -9,7 +9,7 @@ import linked from "../../images/linkedin.png";
 
 export default function Header() {
   return (
-    <div className="w-full h-screen relative bg-stone-900 flex items-center justify-center overflow-hidden">
+    <div id="home" className="w-full h-screen relative bg-stone-900 flex items-center justify-center overflow-hidden">
       <div className="w-full h-screen absolute z-0 bottom-0 left-0 overflow-hidden">
         <img
           src={blob1}
@@ -35,7 +35,7 @@ export default function Header() {
 
               <h2 className="head-font">Web Developer</h2>
             </div>
-            <div className="my-5 sm:my-8 flex gap-4 text-white text-2xl sm:text-4xl">
+            <div className="my-5 sm:my-8 flex gap-4 sm:gap-6 text-white text-2xl sm:text-4xl">
               <i class="fa-brands fa-github "></i>
               <i class="fa-brands fa-linkedin"></i>
               <i class="fa-brands fa-instagram"></i>
@@ -45,7 +45,7 @@ export default function Header() {
                 My Work
               </button>
               <button className="btn text-sm md:text-lg hover:scale-105">
-                Hire me
+                Download CV
               </button>
             </div>
           </div>

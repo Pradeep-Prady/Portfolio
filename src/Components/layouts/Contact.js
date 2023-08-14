@@ -17,10 +17,10 @@ export default function Contact() {
       .then(form.current.reset());
   };
   return (
-    <div className="w-full h-screen bg-stone-800 ">
+    <div id="contact" className="w-full h-screen bg-stone-800 ">
       <div className="w-full h-1/6 py-5 text-center">
         <h2 className="text-3xl head-font text-white">
-          <span className="head-font head">C</span>ontact
+          <span className="head-font head bg-stone-950 px-1 shadow">C</span>ontact
         </h2>
       </div>
 
@@ -33,9 +33,9 @@ export default function Contact() {
           <div className="flex-col my-1">
             <label className="w-full  text-white font-semibold ">Name *</label>
             <input
-              className="w-full my-2 shadow text-white  p-2 bg-stone-900 h-[40px] border-none outline-none"
+              className="w-full my-2 shadow text-white  p-2 bg-stone-900 h-[40px] border-none rounded-sm outline-none"
               type="text"
-              ame="user_name"
+              name="user_name"
               htmlFor="name"
               required
             ></input>
@@ -43,7 +43,7 @@ export default function Contact() {
           <div className="flex-col my-1">
             <label className="w-full text-white font-semibold ">Email *</label>
             <input
-              className="w-full my-2 shadow text-white p-2 bg-stone-900 h-[40px] border-none outline-none"
+              className="w-full my-2 shadow text-white p-2 bg-stone-900 h-[40px] border-none rounded-sm outline-none"
               type="email"
               name="user_email"
               htmlFor="email"
@@ -55,7 +55,7 @@ export default function Contact() {
               Message *
             </label>
             <textarea
-              className="w-full my-2 shadow text-white p-2 resize-none bg-stone-900 h-[100px] border-none outline-none"
+              className="w-full my-2 shadow text-white p-2 resize-none bg-stone-900 h-[100px] rounded-sm border-none outline-none"
               type="text"
               name="message"
               htmlFor="text"
@@ -64,7 +64,7 @@ export default function Contact() {
           </div>
 
           <div className="flex items-center justify-end">
-            <button className="bg-stone-900 shadow text-white px-6 py-2 font-semibold">
+            <button className="bg-stone-900 shadow text-white px-6 py-2 font-semibold rounded-sm shadow">
               Send
             </button>
           </div>

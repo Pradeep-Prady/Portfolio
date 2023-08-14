@@ -16,8 +16,8 @@ export default function About() {
       "
         >
           <div className="w-full flex items-center justify-center">
-            <h2 className="text-center text-xl my-2 head-font pb-1 head border-b w-2/5">
-              About <span className="head-font text-white">M</span>e
+            <h2 className="text-center text-xl my-2 head-font pb-1  w-2/5">
+              About <span className="head-font head bg-stone-950 px-1 shadow">M</span>e
             </h2>
           </div>
           <div className="mx-5">

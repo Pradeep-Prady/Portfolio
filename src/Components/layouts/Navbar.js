@@ -8,65 +8,39 @@ export default function Navbar() {
     setActiveSection(section);
     setNav(false); // Close the mobile menu after clicking a link
   };
+
+  const navigationItems = [
+    { label: "Home", id: "home" },
+    { label: "About", id: "about" },
+    { label: "Skills", id: "skills" },
+    { label: "Portfolio", id: "portfolio" },
+    { label: "Resume", id: "resume" },
+    { label: "Contact", id: "contact" },
+  ];
+
   return (
     <div className="w-full bg-stone-900 relative top-0 left-0 flex items-center justify-center">
       <div className="w-11/12 bg-stone-950 mt-5">
         <nav className=" w-full  flex items-center justify-between py-3 px-5 sm:py-5 sm:px-9 md:px-10 ">
           <div>
-            <a href="/" className="text-xl text-white hover:head">
-              PRADEEP
+            <a href="/" className="text-2xl md:text-4xl text-white title hover:head">
+              Pradeep
             </a>
           </div>
 
           <div className="hidden md:flex items-center justify-center gap-3 text-white ">
-            <p
-              className={`my-2 py-1 px-5 hover:link ${
-                activeSection === "Home" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Home")}
-            >
-              Home
-            </p>
-            <p
-              className={`my-2 py-1 px-5 hover:link ${
-                activeSection === "Skills" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Skills")}
-            >
-              Skills
-            </p>
-            <p
-              className={`my-2 py-1 px-5 hover:link ${
-                activeSection === "About" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("About")}
-            >
-              About
-            </p>
-            <p
-              className={`my-2 py-1 px-5 hover:link ${
-                activeSection === "Portfolio" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Portfolio")}
-            >
-              Portfolio
-            </p>
-            <p
-              className={`my-2 py-1 px-5 hover:link ${
-                activeSection === "Resume" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Resume")}
-            >
-              Resume
-            </p>
-            <p
-              className={`my-2 py-1 px-5 hover:link ${
-                activeSection === "Contact" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Contact")}
-            >
-              Contact
-            </p>
+            {navigationItems.map((nav) => (
+              <a
+                href={`#${nav.id}`}
+                key={nav.label}
+                className={`my-2 py-1 px-5 hover:link ${
+                  activeSection === nav.label ? "link" : ""
+                }`}
+                onClick={() => handleLinkClick(nav.label)}
+              >
+                {nav.label}
+              </a>
+            ))}
           </div>
           <button className="  md:hidden" onClick={() => setNav(!nav)}>
             <i
@@ -81,69 +55,22 @@ export default function Navbar() {
             nav ? "visible" : "hidden "
           }   bg-stone-950 w-full py-2 text-white text-center`}
         >
-          <div className="w-full flex items-center justify-center">
-            <p
-              className={`my-2 py-2 block hover:link w-4/5 sm:w-3/5  items-center ${
-                activeSection === "Home" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Home")}
+          {navigationItems.map((nav) => (
+            <div
+              key={nav.label}
+              className="w-full flex items-center justify-center"
             >
-              Home
-            </p>
-          </div>
-          <div className="w-full flex items-center justify-center">
-            <p
-              className={`my-2 py-2 block hover:link w-4/5 sm:w-3/5  items-center ${
-                activeSection === "Skills" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Skills")}
-            >
-              Skills
-            </p>
-          </div>
-          <div className="w-full flex items-center justify-center">
-            <p
-              className={`my-2 py-2 block hover:link w-4/5 sm:w-3/5  items-center ${
-                activeSection === "About" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("About")}
-            >
-              About
-            </p>
-          </div>
-
-          <div className="w-full flex items-center justify-center">
-            <p
-              className={`my-2 py-2 block hover:link w-4/5 sm:w-3/5  items-center ${
-                activeSection === "Portfolio" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Portfolio")}
-            >
-              Portfolio
-            </p>
-          </div>
-          <div className="w-full flex items-center justify-center">
-            <p
-              className={`my-2 py-2 block hover:link w-4/5 sm:w-3/5  items-center ${
-                activeSection === "Resume" ? "link" : ""
-              }`}
-              onClick={() => handleLinkClick("Resume")}
-            >
-              Resume
-            </p>
-          </div>
-          <div className="w-full flex items-center justify-center">
-            <p
-              className={`my-2 py-2 block hover:link w-4/5 sm:w-3/5  items-center ${
-                activeSection === "Contact" ? "link" : ""
-
-              }`}
-              onClick={() => handleLinkClick("Contact")}
-
-            >
-              Contact
-            </p>
-          </div>
+              <a
+                href={`#${nav.id}`}
+                className={`my-2 py-2 block hover:link w-4/5 sm:w-3/5 items-center ${
+                  activeSection === nav.label ? "link" : ""
+                }`}
+                onClick={() => handleLinkClick(nav.label)}
+              >
+                {nav.label}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </div>

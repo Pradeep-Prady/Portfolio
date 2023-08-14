@@ -7,9 +7,9 @@ import projects from "../../data";
 import Project from "./Project";
 export default function Portfolio() {
   return (
-    <div className="w-full h-screen bg-stone-900">
+    <div id="portfolio" className="w-full h-screen bg-stone-900">
       <div className="w-full  pt-16 text-center">
-        <h2 className="text-3xl head-font text-white">Recent <span className="head-font head">P</span>rojects</h2>
+        <h2 className="text-3xl head-font text-white">Recent <span className="head-font head bg-stone-950 px-1 shadow">P</span>rojects</h2>
       </div>
       <div className="flex w-full h-4/5  px-5 py-12  items-center overflow-x-scroll scroll ">
         {projects.map((project) => (
