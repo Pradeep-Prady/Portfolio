@@ -14,7 +14,6 @@ export default function Navbar() {
     { label: "About", id: "about" },
     { label: "Skills", id: "skills" },
     { label: "Portfolio", id: "portfolio" },
-    { label: "Resume", id: "resume" },
     { label: "Contact", id: "contact" },
   ];
 

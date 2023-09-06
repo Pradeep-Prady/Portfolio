@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../images/p2.png";
+import profile from "../images/about.png";
 
 export default function About() {
   return (
@@ -9,7 +9,7 @@ export default function About() {
     >
       <div className="w-5/6  h-auto  sm:flex sm:items-center sm:justify-center">
         <div className="w-full h-[300px] sm:w-[300px] sm:h-[420px]   bg-stone-900 flex items-center justify-center">
-          
+          <img src={profile} alt="aboutProfile" className="" />
         </div>
         <div
           className="w-full h-auto sm:w-[300px] sm:h-[420px]   bg-stone-900 scale-110 shadow text-white

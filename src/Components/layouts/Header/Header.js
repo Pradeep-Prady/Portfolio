@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-// import profile from "../../images/profile-edit.png";
-import profile from "../../images/p2.png";
+import React from "react";
+import profile from "../../images/ss.png";
 
 import blob1 from "../../images/blob1.png";
 import blob2 from "../../images/blob2.png";
 
-import linked from "../../images/linkedin.png";
-
 export default function Header() {
   return (
-    <div id="home" className="w-full h-screen relative bg-stone-900 flex items-center justify-center overflow-hidden">
+    <div
+      id="home"
+      className="w-full h-screen relative bg-stone-900 flex items-center justify-center overflow-hidden"
+    >
       <div className="w-full h-screen absolute z-0 bottom-0 left-0 overflow-hidden">
         <img
           src={blob1}
@@ -44,14 +44,16 @@ export default function Header() {
               <button className="btn text-sm  md:text-lg btn-mywork hover:scale-105">
                 My Work
               </button>
-              <button className="btn text-sm md:text-lg hover:scale-105">
-                Download CV
-              </button>
+              <a href="#contact">
+                <button className="btn text-sm md:text-lg hover:scale-105">
+                  Contact
+                </button>
+              </a>
             </div>
           </div>
         </div>
 
-        <div className=" w-full h-full flex items-center justify-center  ">
+        <div className=" w-full h-full flex items-center justify-center  overflow-hidden">
           <img src={profile} alt="profile" className="w-[250px] md:w-[500px]" />
         </div>
       </div>

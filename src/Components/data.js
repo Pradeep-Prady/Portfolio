@@ -31,7 +31,49 @@ import music from "./images/music/music.png";
 import music1 from "./images/music/music1.png";
 import music2 from "./images/music/music2.png";
 
+import fish1 from "./images/fish/fish (1).png";
+import fish2 from "./images/fish/fish (2).png";
+import fish3 from "./images/fish/fish (3).png";
+import fish4 from "./images/fish/fish (4).png";
+
 const projects = [
+  {
+    id: 5,
+    title: "Fish Haven",
+    description:
+      "Fish Haven is a vibrant online marketplace where the deep blue meets cutting-edge technology. Dive into the world of premium fish sales with our stunning oceanic design and captivating fish animations. Connect with marine enthusiasts and explore an ocean of aquatic offerings.",
+    role: " I handled both design and development, ensuring a seamless user experience.",
+    technologies:
+      "Leveraged React.js for the user interface and incorporated the sleek design with Tailwind CSS. To add captivating animations, we implemented React Spring, enhancing the overall user experience.",
+    features:
+      "We've adorned Fish Haven with attractive animations that bring the site to life. Plus, we've included a convenient cart option for a seamless shopping experience, ensuring you can effortlessly keep track of your selections.",
+    time: "3 days",
+    link: "https://github.com/Pradeep-Prady/fish",
+    challenges:
+      "Implementing React Spring for animations proved challenging due to my first-time usage. Overcoming it involved thorough online research for a successful integration.",
+    lessons:
+      "My journey with Fish Haven allowed me to acquire valuable insights into the world of React Spring animations, expanding my skill set in this domain.",
+    pic: fish2,
+    website: "https://fishhaven.onrender.com/",
+    images: [
+      {
+        id: 1,
+        url: fish2,
+      },
+      {
+        id: 2,
+        url: fish3,
+      },
+      {
+        id: 3,
+        url: fish4,
+      },
+      {
+        id: 4,
+        url: fish1,
+      },
+    ],
+  },
   {
     id: 1,
     title: "Friends Gallery",
@@ -221,46 +263,3 @@ const projects = [
 ];
 
 export default projects;
-
-// When showcasing your portfolio projects, it's important to provide enough information to help viewers understand the scope, skills, and impact of each project. Here are the key details you should include for each portfolio project:
-
-// 1. **Project Title**: Clearly indicate the project's name to grab the viewer's attention.
-
-// 2. **Project Description**:
-//    - Provide a brief overview of the project's purpose and goals.
-//    - Mention any challenges or problems you aimed to solve.
-
-// 3. **Role and Contribution**:
-//    - Describe your role in the project (e.g., sole developer, team member, etc.).
-//    - Explain your specific contributions, whether it's coding, design, or other aspects.
-
-// 4. **Technologies Used**:
-//    - List the programming languages, frameworks, libraries, and tools you employed.
-
-// 5. **Features and Functionality**:
-//    - Highlight the key features and functionalities of the project.
-//    - Describe how users interact with the project and what it accomplishes.
-
-// 6. **Screenshots or Visuals**:
-//    - Include images or screenshots that showcase the project's user interface or design.
-//    - If applicable, include images of different sections or pages.
-
-// 7. **Code Samples (Optional)**:
-//    - If allowed by the project's license, share a snippet of code that illustrates a unique or complex aspect of the project.
-
-// 8. **Project Link (if applicable)**:
-//    - If the project is live or hosted on a platform like GitHub, provide a link where viewers can interact with it.
-
-// 9. **Project Duration**:
-//    - Mention the timeframe it took to complete the project, from start to finish.
-
-// 10. **Challenges and Solutions**:
-//     - Describe any challenges you encountered during the project and how you addressed them.
-
-// 11. **Lessons Learned**:
-//     - Share any valuable insights or lessons you gained from working on the project.
-
-// 12. **Impact or Results**:
-//     - If possible, mention any positive outcomes, user feedback, or metrics that demonstrate the project's success.
-
-// Remember that the purpose of showcasing your portfolio projects is to demonstrate your skills, problem-solving abilities, and the value you bring as a developer. Providing comprehensive yet concise information will help viewers assess your expertise and the quality of your work.

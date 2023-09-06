@@ -3,7 +3,7 @@ import React from "react";
 import react from "../images/react.png";
 import node from "../images/node.png";
 import java from "../images/java.png";
-import python from "../images/python.png";
+import js from "../images/js.png";
 import html from "../images/html.png";
 import css from "../images/css.png";
 import mongodb from "../images/mongodb.png";
@@ -46,7 +46,7 @@ export default function Skills() {
             <img src={react} alt="react" className="w-[100px]" />
           </div>
           <div className="m-2 transition-all hover:scale-125 bg-stone-950 flex items-center justify-center w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] shadow">
-            <img src={python} alt="react" className="w-[100px]" />
+            <img src={js} alt="react" className="w-[100px]" />
           </div>
         </div>
 
@@ -61,7 +61,7 @@ export default function Skills() {
 
         <div className="w-full flex items-center justify-evenly sm:hidden">
           <div className="m-2 transition-all hover:scale-125 bg-stone-950 flex items-center justify-center w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] shadow">
-            <img src={python} alt="react" className="w-[100px]" />
+            <img src={js} alt="react" className="w-[100px]" />
           </div>
         </div>
 

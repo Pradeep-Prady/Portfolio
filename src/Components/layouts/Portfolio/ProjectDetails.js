@@ -21,7 +21,7 @@ export default function ProjectDetails() {
 
   // console.log(projectData.images);
   return (
-    <div className="w-full h-full bg-stone-900">
+    <div className="w-full h-full bg-stone-900 py-10">
       <div className="w-full h-full grid md:grid-cols-2 ">
         <div className="w-full">
           <div className="w-full h-full flex items-center justify-center">
@@ -54,6 +54,20 @@ export default function ProjectDetails() {
             <h3 className="head head-font py-2">Project Title</h3>
             <p className="text-white py-2">{projectData?.title}</p>
           </div>
+          {projectData?.website && (
+            <div className="bg-stone-950 w-full flex-col sm:flex items-center justify-evenly scale-95 mt-5 py-5 shadow z-10">
+              <h3 className="head  py-2">Website Link</h3>
+              <a
+                href={projectData?.website}
+                className="text-white py-2 hover:cursor-pointer"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {projectData?.website}
+              </a>
+            </div>
+          )}
+
           <div className="grid sm:grid-cols-2  my-4 ">
             <div className=" shadow bg-stone-950 z-0 p-3 scale-95">
               <h3 className="head my-2">Project Description</h3>
