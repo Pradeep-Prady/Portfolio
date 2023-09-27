@@ -36,7 +36,94 @@ import fish2 from "./images/fish/fish (2).png";
 import fish3 from "./images/fish/fish (3).png";
 import fish4 from "./images/fish/fish (4).png";
 
+import flower1 from "./images/flower/flower (1).png";
+import flower2 from "./images/flower/flower (2).png";
+import flower3 from "./images/flower/flower (3).png";
+import flower4 from "./images/flower/flower (4).png";
+import flower5 from "./images/flower/flower (5).png";
+import flower6 from "./images/flower/flower (6).png";
+import flower7 from "./images/flower/flower (7).png";
+import flower8 from "./images/flower/flower (8).png";
+import flower9 from "./images/flower/flower (9).png";
+import flower10 from "./images/flower/flower (10).png";
+import flower11 from "./images/flower/flower (11).png";
+import flower12 from "./images/flower/flower (12).png";
+import flower13 from "./images/flower/flower (13).png";
+
 const projects = [
+  {
+    id: 6,
+    title: "Flower Haven",
+    description:
+      "Description: Flower Haven is a sophisticated online flower shopping platform built on the MERN (MongoDB, Express, React, Node.js) stack, offering an exquisite user interface and seamless user experience for flower enthusiasts.",
+    role: "As the sole developer, I took on the full spectrum of responsibilities for Flower Haven. From inception to deployment, I personally designed, developed, and implemented every aspect of both the frontend and backend, ensuring a cohesive and efficient online flower shopping experience.",
+    technologies:
+      "Flower Haven leverages the powerful MERN stack, comprising MongoDB for robust data management, Express.js for backend server development, React.js for the responsive and interactive frontend, and Node.js for server-side scripting. The frontend design is enriched with Tailwind CSS, enhancing user interface aesthetics and responsiveness.",
+    features:
+      "Flower Haven offers a diverse selection of flowers for every occasion. Customers can explore detailed product information, read and leave reviews, and easily add items to their cart for a seamless shopping experience. With smart filters and a robust search function, finding the perfect bouquet is a breeze. Registered users can conveniently track their orders, while administrators have the tools to manage products and users effortlessly.",
+    time: "7 days",
+    link: "https://github.com/Pradeep-Prady/flowerhaven/",
+    challenges:
+      "I encountered challenges primarily in two areas. Firstly, integrating payment systems proved to be tricky, requiring extra effort to ensure smooth transactions. Secondly, developing robust admin panels and optimizing the product search functionality presented their own set of complexities.",
+    lessons:
+      "I not only mastered the art of creating straightforward e-commerce websites but also significantly improved my UI/UX skills, enhancing the overall user experience.",
+    pic: flower1,
+    website: "https://flower-haven.onrender.com/",
+    images: [
+      {
+        id: 1,
+        url: flower1,
+      },
+      {
+        id: 2,
+        url: flower2,
+      },
+      {
+        id: 3,
+        url: flower3,
+      },
+      {
+        id: 4,
+        url: flower4,
+      },
+      {
+        id: 5,
+        url: flower5,
+      },
+      {
+        id: 6,
+        url: flower6,
+      },
+      {
+        id: 7,
+        url: flower7,
+      },
+      {
+        id: 8,
+        url: flower8,
+      },
+      {
+        id: 9,
+        url: flower9,
+      },
+      {
+        id: 10,
+        url: flower10,
+      },
+      {
+        id: 11,
+        url: flower11,
+      },
+      {
+        id: 12,
+        url: flower12,
+      },
+      {
+        id: 13,
+        url: flower13,
+      },
+    ],
+  },
   {
     id: 5,
     title: "Fish Haven",
@@ -192,7 +279,7 @@ const projects = [
       "Leveraged React.js for the user interface, implemented server-side logic using Node.js with Express, and stored data in MongoDB for efficient data management.",
     features:
       "Travel Notes is designed to help travelers connect and share. Users can explore travel stories from others, leave comments, and easily create an account to share their own experiences. It's a welcoming space to discover new places and get inspired for future adventures.",
-    link: "https://github.com/Pradeep-Prady/FoodStall",
+    link: "https://github.com/Pradeep-Prady/Travel-Notes",
     challenges:
       "Crafting an intuitive user interface posed a primary challenge, demanding careful design to ensure user-friendly navigation. Additionally, establishing seamless backend connectivity, especially within the context of my MERN stack learning, presented a learning curve, making the project more intricate. Overcoming these hurdles required a balance of creativity and technical skills, ultimately contributing to a valuable learning experience.",
     lessons:
@@ -239,7 +326,7 @@ const projects = [
       "The Music Player project harnesses the power of React.js and leverages the Spotify API to create a seamless and visually captivating music playback experience.",
     features:
       "The Music Player app boasts an attractive and user-friendly UI, prioritizing clear navigation. Users can effortlessly browse and play music, experiencing a visually appealing interface that enhances their music listening journey.",
-    link: "https://github.com/Pradeep-Prady/FoodStall",
+    link: "https://github.com/Pradeep-Prady/Rhythm",
     challenges:
       "Connecting with the Spotify API posed challenges that needed careful solutions for smooth operation. Also, ensuring a responsive UI brought its own set of difficulties, requiring smart design choices for consistent user experiences across devices.",
     lessons:

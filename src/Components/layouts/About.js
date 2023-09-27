@@ -23,7 +23,6 @@ export default function About() {
           <div className="mx-5">
             <h3 className="my-2 head">Personal Details</h3>
             <p className="text-sm tracking-wide leading-relaxed">
-              {" "}
               Hello, I'm Pradeep. I am a dedicated web developer with a passion
               for crafting seamless digital experiences. Based in Erode, Tamil
               Nadu, I hold a degree in Computer Science and Engineering from
